@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    {{movie.MovieName}}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <h5>Select Your Seats</h5>
+                    </div>
+                    <div class="row">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr *ngFor="let row of seats;">
+                                    <td *ngFor="let seat of row" [ngClass]="seat.status" (click)="selectSeat(seat)" >
+                                        <h5>{{seat.col}}</h5>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-sm-6">
+    <table class="table table-bordered table-hovered">
+        <tr>
+            <th>Movie Name</th>
+            <th>{{movie.MovieName}}</th>
+        </tr>
+        <tr>
+            <th>No. Of Booked Seat</th>
+            <th>{{getBookedSeats()}}</th>
+        </tr>
+        <tr>
+            <th>Total Amount</th>
+            <th>{{getTotalAmount()}}</th>
+        </tr>
+        <tr>
+            <th>Tax </th>
+            <th>{{getTax()}}</th>
+        </tr>
+        <tr>
+            <th>Total Payable Amount	</th>
+            <th>{{getTotalPayable()}}</th>
+        </tr>
+    </table></div>
+</div></div>

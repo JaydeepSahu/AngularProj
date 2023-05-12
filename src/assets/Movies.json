@@ -1,0 +1,21 @@
+{
+
+    "BasicPrice":300, "MovieName":"Dhamaka",
+
+     "Rows":[
+
+              {"row":1, "Start":1, "End":10, "AlreadyBooked": [2,3,5]},
+
+              {"row":2, "Start":11, "End":15, "AlreadyBooked":[12,14]},
+
+              {"row":3, "Start":16, "End":20, "AlreadyBooked" :[17,20]},
+
+              {"row":4, "Start":21, "End":30, "AlreadyBooked":[22,25]},
+
+              {"row":5, "Start":31, "End":40,"AlreadyBooked":[33,36,38]},
+
+              {"row":6, "Start":41, "End":45, "AlreadyBooked" :[42,44]}
+
+            ]
+
+  }

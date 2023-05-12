@@ -1,0 +1,11 @@
+.booked{
+background-color: rgb(212, 212, 212);
+}
+
+.empty{
+background-color: rgb(255, 255, 255);
+}
+
+.selected{
+    background-color: rgb(29, 196, 29);
+}
